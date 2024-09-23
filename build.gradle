@@ -15,6 +15,7 @@ dependencies {
 
     // Додаємо JUnit 5 як залежність для тестів
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'org.testng:testng:7.1.0'
 
 }
 
