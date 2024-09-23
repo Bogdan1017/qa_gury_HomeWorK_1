@@ -1,0 +1,23 @@
+plugins {
+    id 'java' // Додаємо підтримку Java
+}
+
+group 'com.example' // Змінюй на свою групу (ім'я пакету)
+version '1.0-SNAPSHOT' // Версія проекту
+
+repositories {
+    mavenCentral() // Вказуємо використання Maven Central для завантаження залежностей
+}
+
+dependencies {
+    // Додаємо Selenide як залежність для тестів
+    testImplementation 'com.codeborne:selenide:6.19.1'
+
+    // Додаємо JUnit 5 як залежність для тестів
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+
+}
+
+test {
+    useJUnitPlatform() // Вказуємо Gradle використовувати JUnit Platform для запуску тестів
+}
