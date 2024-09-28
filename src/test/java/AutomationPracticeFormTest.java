@@ -20,7 +20,7 @@ public class AutomationPracticeFormTest {
 
         @Test
         void fillFormTest() {
-            open("/text-box/");
+            open("/automation-practice-form");
             $("[id=firstName]").setValue("Lionel");   //Enter first name
             $("[id=lastName]").setValue("Messi");     // Enter last name
             $("[id=userEmail]").setValue("t1346est1@gmail.com"); // Enter Email
