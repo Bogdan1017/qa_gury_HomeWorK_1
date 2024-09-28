@@ -58,6 +58,9 @@ public class AutomationPracticeFormTest {
 
             $("[id=submit]").click();
 
+            $("[class=modal-content]").shouldHave(text("Lionel"),text("Messi"),
+                    text("t1346est1@gmail.com"),text("Male"),text("0000000000"));
+
 
 
         }
